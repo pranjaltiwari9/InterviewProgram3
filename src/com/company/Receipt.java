@@ -116,7 +116,7 @@ public class Receipt {
             }
 
             productsSold[i].updateAndRoundOffPrice(taxesForEachProduct[i]);
-
+            input.nextLine();   //Consuming the <enter> from input above, EXCEPTION HANDLING
         }
         receipt.calculateTotalTax(taxesForEachProduct);
         receipt.calculateTotalPrice(productsSold);
